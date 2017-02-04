@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="BPA Reporting POC" duration-ms="11063" started-at="2017-02-03T12:37:22Z" finished-at="2017-02-03T12:37:33Z">
+  <suite name="BPA Reporting POC" duration-ms="15775" started-at="2017-02-04T16:03:43Z" finished-at="2017-02-04T16:03:59Z">
     <groups>
       <group name="all">
         <method signature="BPA_Smoke_Login_TC001.verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" name="verify_execution" class="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
@@ -17,26 +17,26 @@
         <method signature="BPA_Smoke_Login_TC001.verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" name="verify_execution" class="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
       </group> <!-- ie -->
     </groups>
-    <test name="BPA Report Demo 1" duration-ms="11063" started-at="2017-02-03T12:37:22Z" finished-at="2017-02-03T12:37:33Z">
+    <test name="BPA Report Demo 1" duration-ms="15775" started-at="2017-02-04T16:03:43Z" finished-at="2017-02-04T16:03:59Z">
       <class name="intialize.Prerequsite">
-        <test-method status="PASS" signature="initialize(org.testng.ITestContext)[pri:0, instance:intialize.Prerequsite@239963d8]" name="initialize" is-config="true" duration-ms="377" started-at="2017-02-03T18:07:22Z" finished-at="2017-02-03T18:07:22Z">
+        <test-method status="PASS" signature="initialize(org.testng.ITestContext)[pri:0, instance:intialize.Prerequsite@239963d8]" name="initialize" is-config="true" duration-ms="512" started-at="2017-02-04T21:33:43Z" finished-at="2017-02-04T21:33:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@17acd4c5]]>
+                <![CDATA[org.testng.TestRunner@176b3279]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="ending()[pri:0, instance:intialize.Prerequsite@239963d8]" name="ending" is-config="true" duration-ms="13" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+        <test-method status="PASS" signature="ending()[pri:0, instance:intialize.Prerequsite@239963d8]" name="ending" is-config="true" duration-ms="25" started-at="2017-02-04T21:33:59Z" finished-at="2017-02-04T21:33:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ending -->
       </class> <!-- intialize.Prerequsite -->
       <class name="com.poc.ReportingStructure.BPA_Smoke_Login_TC001">
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="93" started-at="2017-02-03T18:07:22Z" finished-at="2017-02-03T18:07:22Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="165" started-at="2017-02-04T21:33:44Z" finished-at="2017-02-04T21:33:44Z">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="4014" started-at="2017-02-03T18:07:22Z" finished-at="2017-02-03T18:07:26Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="7009" started-at="2017-02-04T21:33:44Z" finished-at="2017-02-04T21:33:51Z">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="828" started-at="2017-02-03T18:07:26Z" finished-at="2017-02-03T18:07:27Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1183" started-at="2017-02-04T21:33:51Z" finished-at="2017-02-04T21:33:52Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="75" started-at="2017-02-03T18:07:27Z" finished-at="2017-02-03T18:07:27Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="124" started-at="2017-02-04T21:33:52Z" finished-at="2017-02-04T21:33:52Z">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="243" started-at="2017-02-03T18:07:27Z" finished-at="2017-02-03T18:07:28Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="317" started-at="2017-02-04T21:33:52Z" finished-at="2017-02-04T21:33:52Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="268" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:28Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="543" started-at="2017-02-04T21:33:52Z" finished-at="2017-02-04T21:33:53Z">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="203" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:28Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="277" started-at="2017-02-04T21:33:53Z" finished-at="2017-02-04T21:33:53Z">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="275" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:28Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="331" started-at="2017-02-04T21:33:53Z" finished-at="2017-02-04T21:33:54Z">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1655" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:30Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1321" started-at="2017-02-04T21:33:54Z" finished-at="2017-02-04T21:33:55Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="317" started-at="2017-02-03T18:07:30Z" finished-at="2017-02-03T18:07:30Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="665" started-at="2017-02-04T21:33:55Z" finished-at="2017-02-04T21:33:56Z">
           <params>
             <param index="0">
               <value>
@@ -146,7 +146,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="165" started-at="2017-02-03T18:07:30Z" finished-at="2017-02-03T18:07:30Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="186" started-at="2017-02-04T21:33:56Z" finished-at="2017-02-04T21:33:56Z">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="209" started-at="2017-02-03T18:07:30Z" finished-at="2017-02-03T18:07:31Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="288" started-at="2017-02-04T21:33:56Z" finished-at="2017-02-04T21:33:56Z">
           <params>
             <param index="0">
               <value>
@@ -168,7 +168,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="592" started-at="2017-02-03T18:07:31Z" finished-at="2017-02-03T18:07:31Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="646" started-at="2017-02-04T21:33:56Z" finished-at="2017-02-04T21:33:57Z">
           <params>
             <param index="0">
               <value>
@@ -179,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="171" started-at="2017-02-03T18:07:31Z" finished-at="2017-02-03T18:07:31Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="204" started-at="2017-02-04T21:33:57Z" finished-at="2017-02-04T21:33:57Z">
           <params>
             <param index="0">
               <value>
@@ -190,7 +190,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1699" started-at="2017-02-03T18:07:31Z" finished-at="2017-02-03T18:07:33Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="2129" started-at="2017-02-04T21:33:57Z" finished-at="2017-02-04T21:33:59Z">
           <params>
             <param index="0">
               <value>
@@ -201,7 +201,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="2" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="11" started-at="2017-02-04T21:33:59Z" finished-at="2017-02-04T21:33:59Z">
           <params>
             <param index="0">
               <value>
@@ -212,7 +212,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1" started-at="2017-02-04T21:33:59Z" finished-at="2017-02-04T21:33:59Z">
           <params>
             <param index="0">
               <value>
@@ -223,7 +223,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_execution -->
-        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="2" started-at="2017-02-04T21:33:59Z" finished-at="2017-02-04T21:33:59Z">
           <params>
             <param index="0">
               <value>
