@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BPA Reporting POC">
+  <test name="BPA Report Demo 1">
+    <classes>
+    	<class name="intialize.Prerequsite"/>
+      <class name="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+      <!-- <class name="com.poc.ReportingStructure.SecondReportDemo"/>
+      <class name="com.poc.ReportingStructure.ThirdReportDemo"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

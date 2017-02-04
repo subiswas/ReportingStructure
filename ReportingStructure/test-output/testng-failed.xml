@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BPA Reporting POC]">
+  <test name="BPA Report Demo 1">
+    <classes>
+      <class name="intialize.Prerequsite"/>
+      <class name="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+    </classes>
+  </test> <!-- BPA Report Demo 1 -->
+</suite> <!-- Failed suite [BPA Reporting POC] -->

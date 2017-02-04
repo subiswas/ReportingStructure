@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BPA Reporting POC" duration-ms="11063" started-at="2017-02-03T12:37:22Z" finished-at="2017-02-03T12:37:33Z">
+    <groups>
+      <group name="all">
+        <method signature="BPA_Smoke_Login_TC001.verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" name="verify_execution" class="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+      </group> <!-- all -->
+      <group name="chrome">
+        <method signature="BPA_Smoke_Login_TC001.verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" name="verify_execution" class="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+      </group> <!-- chrome -->
+      <group name="firefox">
+        <method signature="BPA_Smoke_Login_TC001.verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" name="verify_execution" class="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+      </group> <!-- firefox -->
+      <group name="ie">
+        <method signature="BPA_Smoke_Login_TC001.verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" name="verify_execution" class="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+      </group> <!-- ie -->
+    </groups>
+    <test name="BPA Report Demo 1" duration-ms="11063" started-at="2017-02-03T12:37:22Z" finished-at="2017-02-03T12:37:33Z">
+      <class name="intialize.Prerequsite">
+        <test-method status="PASS" signature="initialize(org.testng.ITestContext)[pri:0, instance:intialize.Prerequsite@239963d8]" name="initialize" is-config="true" duration-ms="377" started-at="2017-02-03T18:07:22Z" finished-at="2017-02-03T18:07:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@17acd4c5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="ending()[pri:0, instance:intialize.Prerequsite@239963d8]" name="ending" is-config="true" duration-ms="13" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ending -->
+      </class> <!-- intialize.Prerequsite -->
+      <class name="com.poc.ReportingStructure.BPA_Smoke_Login_TC001">
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="93" started-at="2017-02-03T18:07:22Z" finished-at="2017-02-03T18:07:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=localhost, Browser=Chrome, TC_ID=BPA_Smoke_Login_TC001, Keyword=START, Object_Name=, Object_Type=, Value=, Running_Flag=Y, Description=Start execution}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="4014" started-at="2017-02-03T18:07:22Z" finished-at="2017-02-03T18:07:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=LAUNCH, Object_Name=, Object_Type=, Value=Firefox, Running_Flag=Y, Description=Launching firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="828" started-at="2017-02-03T18:07:26Z" finished-at="2017-02-03T18:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=GO_TO_URL, Object_Name=url, Object_Type=, Value=, Running_Flag=Y, Description=Navigate to BPA url}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="75" started-at="2017-02-03T18:07:27Z" finished-at="2017-02-03T18:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=WAIT_FOR_PAGE_TO_LOAD, Object_Name=, Object_Type=, Value=, Running_Flag=Y, Description=waiting for page to load}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="243" started-at="2017-02-03T18:07:27Z" finished-at="2017-02-03T18:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=VERIFY_ELEMENT_DISPLAYED, Object_Name=loginPanel, Object_Type=id, Value=, Running_Flag=Y, Description=Verify display of login panel}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="268" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=SET_TEXT, Object_Name=username, Object_Type=id, Value=user_name, Running_Flag=Y, Description=Entering username}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="203" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=SET_TEXT, Object_Name=password, Object_Type=id, Value=user_pwd, Running_Flag=Y, Description=Entering password}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="275" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=CLICK_BUTTON, Object_Name=signin, Object_Type=id, Value=, Running_Flag=Y, Description=Clicking signin button}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1655" started-at="2017-02-03T18:07:28Z" finished-at="2017-02-03T18:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=WAIT_FOR_ELEMENT, Object_Name=logout, Object_Type=class, Value=, Running_Flag=Y, Description=waiting for page to load}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="317" started-at="2017-02-03T18:07:30Z" finished-at="2017-02-03T18:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=VERIFY_ELEMENT_DISPLAYED, Object_Name=logout, Object_Type=class, Value=, Running_Flag=Y, Description=Verify display of home page}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="165" started-at="2017-02-03T18:07:30Z" finished-at="2017-02-03T18:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=VERIFY_TEXT, Object_Name=version, Object_Type=id, Value=Version 5.1, Running_Flag=Y, Description=Verifying version no of bpa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="209" started-at="2017-02-03T18:07:30Z" finished-at="2017-02-03T18:07:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=CLICK_BUTTON, Object_Name=logout, Object_Type=class, Value=, Running_Flag=Y, Description=Clicking logout button}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="592" started-at="2017-02-03T18:07:31Z" finished-at="2017-02-03T18:07:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=WAIT_FOR_ELEMENT, Object_Name=logout_message, Object_Type=tagName, Value=, Running_Flag=Y, Description=waiting for page to load}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="171" started-at="2017-02-03T18:07:31Z" finished-at="2017-02-03T18:07:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=VERIFY_TEXT, Object_Name=logout_message, Object_Type=tagName, Value=You have successfully logged out of Book Print Archive, Running_Flag=Y, Description=Verifying logout message}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1699" started-at="2017-02-03T18:07:31Z" finished-at="2017-02-03T18:07:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=TERMINATE, Object_Name=, Object_Type=, Value=, Running_Flag=Y, Description=Execution completed}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="2" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=EXIT, Object_Name=, Object_Type=, Value=, Running_Flag=, Description=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=, Object_Name=, Object_Type=, Value=, Running_Flag=, Description=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+        <test-method status="PASS" signature="verify_execution(java.util.Map)[pri:0, instance:com.poc.ReportingStructure.BPA_Smoke_Login_TC001@3abbfa04]" test-instance-name="" name="verify_execution" duration-ms="1" started-at="2017-02-03T18:07:33Z" finished-at="2017-02-03T18:07:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Machine=, Browser=, TC_ID=, Keyword=, Object_Name=, Object_Type=, Value=, Running_Flag=, Description=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_execution -->
+      </class> <!-- com.poc.ReportingStructure.BPA_Smoke_Login_TC001 -->
+    </test> <!-- BPA Report Demo 1 -->
+  </suite> <!-- BPA Reporting POC -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="BPA Report Demo 1(failed)">
+    <classes>
+      <class name="intialize.Prerequsite">
+        <methods>
+          <include name="ending"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- intialize.Prerequsite -->
+      <class name="com.poc.ReportingStructure.BPA_Smoke_Login_TC001">
+        <methods>
+          <include name="verify_execution" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- com.poc.ReportingStructure.BPA_Smoke_Login_TC001 -->
+    </classes>
+  </test> <!-- BPA Report Demo 1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

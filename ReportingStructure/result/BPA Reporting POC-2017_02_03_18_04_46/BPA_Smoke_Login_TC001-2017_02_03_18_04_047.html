@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html> 
+  <head> 
+    <style>.datagrid table { border-collapse: collapse; text-align: left; width: 100%; }.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow-x: auto; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }.datagrid table td, .datagrid table th { padding: 3px 10px; }.datagrid table thead th {background-color:#006699; color:#FFFFFF; font-size: 12px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 2px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEf4;} .datagrid table tfoot td { padding: 0; font-size: 12px } .datagrid table tfoot td div{ padding: 2px; }.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }.datagrid table tfoot li { display: inline; }.datagrid table tfoot li a { text-decoration: none; display: inline-block; padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #006699;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; }.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration:none;border-color: #00557F; color: #FFFFFF; background: none;background-color:#006699;} .serviceDetail table { border-collapse: collapse; text-align: left; } .serviceDetail { font: normal 9px/150% Arial, Helvetica, sans-serif; background: #fff; overflow-x: auto; border: 1px solid #1e1e1e; width: 85%; } .serviceDetail table td, .serviceDetail table th { padding: 3px 10px; } .serviceDetail table thead th { background-color:#aaccee; color:#000000; font-size: 10px; font-weight: bold; border-left: 1px solid #aaccee; } .serviceDetail table thead th:first-child { border: none; } .serviceDetail table tbody td { color: #000000; border-left: 2px solid #E1EEF4;font-size: 10px;font-weight: normal; } .serviceDetail table tbody .alt td { background: #E1EEf4; color: #00557F; } .serviceDetail table tbody td:first-child { border-left: none; } .serviceDetail table tbody tr:last-child td { border-bottom: none; } .serviceDetail table tfoot td div { border-top: 1px solid #006699;background: #E1EEf4; } .serviceDetail table tfoot td { padding: 0; font-size: 12px } .serviceDetail table tfoot td div { padding: 2px; } .serviceDetail table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; } .serviceDetail table tfoot li { display: inline; } .serviceDetail table tfoot li a { text-decoration: none; display: inline-block; padding: 2px 8px; margin: 1px; color: #FFFFFF; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) ); background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% ); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; } .serviceDetail table tfoot ul.active, .serviceDetail table tfoot ul a:hover { text-decoration:none;border-color: #00557F; color: #FFFFFF; background: none;background-color:#006699; }</style>  
+    <script type="text/javascript" src="codebase/js/jquery.min.js">//Test</script>  
+    <script src="codebase/js/highcharts.js">//Test</script>  
+    <script src="codebase/js/result.js">//Test</script> 
+  </head>  
+  <body onload="detail('container','test');"> 
+    <div align="center"> 
+      <h1 id="header">BPA_Smoke_Login_TC001</h1> 
+    </div>  
+    <table align="center"> 
+      <tr> 
+        <td> 
+          <div id="container" style="min-width: 500px; height: 400px; margin: 0 auto"/> 
+        </td>  
+        <td> 
+          <div class="datagrid"> 
+            <table id="tblDetails"> 
+              <thead> 
+                <tr> 
+                  <th>Date</th>  
+                  <th>No. of Pass</th>  
+                  <th>No. of Fail</th> 
+                </tr> 
+              </thead>  
+              <tbody> 
+                <tr> 
+                  <td id="date">03-02-2017</td>  
+                  <td id="pCount"/>  
+                  <td id="fCount"/> 
+                </tr> 
+              </tbody> 
+            </table> 
+          </div> 
+        </td> 
+      </tr> 
+    </table>  
+    <div class="datagrid"> 
+      <table id="tblDetail"> 
+        <thead> 
+          <tr> 
+            <th>S.No.</th>  
+            <th>Test Step</th>  
+            <th>Expected</th>  
+            <th>Actual</th>  
+            <th>Timestamp</th>  
+            <th>Status</th>  
+            <th>Link</th> 
+          </tr> 
+        </thead>  
+        <tbody> 
+          <tr name="PASS" id="47978c71-2410-4e29-bd8f-84d17e68aacc"> 
+            <td>1</td>  
+            <td>Verify Browser launch</td>  
+            <td>Browser should be launched</td>  
+            <td>Browser is launched</td>  
+            <td>2017/02/03 18:04:056</td>  
+            <td>PASS</td>  
+            <td> 
+              <a href="Screenshot/screen-697ce8e5-1aa4-470b-be36-f9ed45d057b5.png">Link</a> 
+            </td> 
+          </tr>  
+          <tr name="INFO" id="c0ce9a6f-d6e8-4cda-9cc6-8a13d904a14e" style="background-color:#ADD8E6;"> 
+            <td>2</td>  
+            <td>Go to http://bpa1.qa.wiley.com:8080/bpa/login.htm</td>  
+            <td/>  
+            <td/>  
+            <td>2017/02/03 18:04:057</td>  
+            <td>INFO</td>  
+            <td/> 
+          </tr>  
+          <tr name="INFO" id="ed323705-613f-4fcd-92e4-d2c26ed32011" style="background-color:#ADD8E6;"> 
+            <td>3</td>  
+            <td>HomePage &gt; logoutOnlineLibrary</td>  
+            <td/>  
+            <td/>  
+            <td>2017/02/03 18:04:057</td>  
+            <td>INFO</td>  
+            <td/> 
+          </tr>  
+          <tr name="PASS" id="916df763-7465-4924-b3e9-cf73d6810fd4"> 
+            <td>4</td>  
+            <td>Verify element displayed - logincontainer</td>  
+            <td>Should display - logincontainer</td>  
+            <td>Displayed - logincontainer</td>  
+            <td>2017/02/03 18:04:057</td>  
+            <td>PASS</td>  
+            <td> 
+              <a href="Screenshot/screen-033f3ded-91d7-4561-b223-d2b9d03a318a.png">Link</a> 
+            </td> 
+          </tr>  
+          <tr name="PASS" id="023e853f-2a42-487e-9659-d56343ee32f3"> 
+            <td>5</td>  
+            <td>Verify send text - subiswas</td>  
+            <td>'subiswas' should be entered</td>  
+            <td>'subiswas' is entered</td>  
+            <td>2017/02/03 18:04:057</td>  
+            <td>PASS</td>  
+            <td> 
+              <a href="Screenshot/screen-633ff192-5f31-4703-bc9f-81f4453bee00.png">Link</a> 
+            </td> 
+          </tr>  
+          <tr name="PASS" id="11dd3d9f-922a-4ea8-a4ee-2337ab47ea77"> 
+            <td>6</td>  
+            <td>Verify send text - wiley2345</td>  
+            <td>'wiley2345' should be entered</td>  
+            <td>'wiley2345' is entered</td>  
+            <td>2017/02/03 18:04:058</td>  
+            <td>PASS</td>  
+            <td> 
+              <a href="Screenshot/screen-b10ebb8c-af34-4d80-9c3b-95154bb39026.png">Link</a> 
+            </td> 
+          </tr>  
+          <tr name="PASS" id="52b245d3-67f1-4ff5-a477-0d5bc01c73c7"> 
+            <td>7</td>  
+            <td>Verify clicking button - signInButton</td>  
+            <td>Button should be clicked</td>  
+            <td>Button is clicked</td>  
+            <td>2017/02/03 18:04:058</td>  
+            <td>PASS</td>  
+            <td> 
+              <a href="Screenshot/screen-050f22b4-1542-4d8e-8ea9-450ff8511f08.png">Link</a> 
+            </td> 
+          </tr>  
+          <tr name="FAIL" id="3f2a4e78-4425-4bc7-b25c-9aeae63aa9fb"> 
+            <td>8</td>  
+            <td>Exception occured at 'text_verification'</td>  
+            <td/>  
+            <td>Tried to run command without establishing a connection Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700' System info: host: 'ZAUSVDISUBISWAS', ip: '10.201.167.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAJiQQ0oAAAAAAAAAAAAAAAAHAAAAdXNlci5qc61XwW7bOBC971cUPrVAwk2a7aU9eZMUWCDYLOINejFAUNTIYkyRXA5pxX+/Q8mqHUuW3KInUxKHw5l57804InjuPBTvZ5m3NT0xFAU0a2VWrBK6Fh4YGJFpyGcX7wqhET58+S3uLXMRaI+zPiSTEoQOZfvMaNNGyQn7znMJ2oGfO4csud3iHNessF7C2XYGNrQiMxQb+NfeKVyT7SzAa/hdmG36fXfRPDktlGmXZaj0hXBOKymCsqb9NnvrzECorV+zMgTHXKmw3F6mz04gXmowq1CSp4+fPg3f0YPI6SeHADJA/lV5DHNKmNQpuODjcU5tRcl/5bL0tgKO0isXuI+GB1Ulk5urYUdBZMioZubR3GqLE6nLbW20FTn5MmKVql/a+lsJZkElTeUcNnd0KRcwOeOVzYWeAAhsgrUaGXhP5bQGrT7ERD98VCtjDWWtgioDv2gecTwWBESqHgZLgPWAkfJW0EW59ALLcVutzJpZB4YTIMAboVMxfxjmRSrrUzTDzmrIcq8IoFxICVTOaChyJDhwCT5MhJcrJFxuIb+/vlr8bQk6qbZ/DG+mV/mj+aYMFRivr5giT/b56SGRQWQ2hs+ZFmY964OujYgLrfkLUjbSRVWb+36ZXp2ifNNeVpcqgFYY6ID/ovKnoJBwsFaB7ejUwY6CS2AYdPK9RoIqQwwYxxom4EbHSqKNo7N5DVomCkWfajqbTRChsJqI+kCR9BGQsGEajLHoCA7ADNWh2D7TljN51i3uVLKY3X5eLpM1LpcYM4W1oNVTB7IFJUOG6GG57OzwuGSnQRldMrgfTRbI6FXYEnA10Iph8EoGbr1aKcOdJUncjkdmoCYVYLvsjmDrzUXbk1l6uYhZpRrm/tO8nDfcOK/XDB4zGvF3sdjBJEGEdp4Q070sUJh1w6Y+KmxR0D64FG3j0rbm2ZbnUIiow7C6dWmX6HZoHr5tH3Cj2O/IRUwk4Qx+y1qhbvZ/nNp7Vo++f36Ysxsm9kXqh/ciNqJtWKMaf1yKjrHjOOrf28NL01NHnbQwTcePx3mQcRFDGiDS5oUkECQJvL46JentqdzQBLEBTmOICcOaOdCoHwlh5+pHC6uvjUr9EgU5iDjTVq4bET8LCwjCy3KHzKn7V6zlD8tj5c7CxT7mX6SVRNCzaPQG65aK61U+3Jp6+nksnDfDQ2Tb9i475SAGhDjR/nd7T6jiblqcHhMPZhBsJqT9DELqGRtM9eM8yFxixfAlDmhv25mhmSb/MrftwHdyzt01f94IbU5pNCue6jeBPhr7NZMlyPVdS4o/2y8/Phcwkecq3VhMNLHB/0g/+99I29UqvdzNw6Nt64CkTcS3JOukNJnSCX1GrcqgTzTqA9PO48+oMu+IwCqasBsgztJU7uEoR/uZMA3xIlESJ4bCvaDoAqNrp5f9uPY/UEsHCOjpz7kuBAAApQ4AAFBLAQIUABQACAgIAJiQQ0ro6c+5LgQAAKUOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAGMEAAAAAA==}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=6684, browserVersion=51.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, firefox_profile=UEsDBBQACAgIAJiQQ0oAAAAAAAAAA...}] Session ID: 82c1927e-b8f6-4104-91d6-523aee2ba165 *** Element info: {Using=id, value=buildNumber}</td>  
+            <td>2017/02/03 18:05:006</td>  
+            <td>FAIL</td>  
+            <td/> 
+          </tr>  
+          <tr name="FAIL" id="55d1b48e-0a69-42d6-9de8-b08676078117"> 
+            <td>9</td>  
+            <td>Exception occured at 'text_verification'</td>  
+            <td/>  
+            <td>Tried to run command without establishing a connection Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700' System info: host: 'ZAUSVDISUBISWAS', ip: '10.201.167.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAJiQQ0oAAAAAAAAAAAAAAAAHAAAAdXNlci5qc61XwW7bOBC971cUPrVAwk2a7aU9eZMUWCDYLOINejFAUNTIYkyRXA5pxX+/Q8mqHUuW3KInUxKHw5l57804InjuPBTvZ5m3NT0xFAU0a2VWrBK6Fh4YGJFpyGcX7wqhET58+S3uLXMRaI+zPiSTEoQOZfvMaNNGyQn7znMJ2oGfO4csud3iHNessF7C2XYGNrQiMxQb+NfeKVyT7SzAa/hdmG36fXfRPDktlGmXZaj0hXBOKymCsqb9NnvrzECorV+zMgTHXKmw3F6mz04gXmowq1CSp4+fPg3f0YPI6SeHADJA/lV5DHNKmNQpuODjcU5tRcl/5bL0tgKO0isXuI+GB1Ulk5urYUdBZMioZubR3GqLE6nLbW20FTn5MmKVql/a+lsJZkElTeUcNnd0KRcwOeOVzYWeAAhsgrUaGXhP5bQGrT7ERD98VCtjDWWtgioDv2gecTwWBESqHgZLgPWAkfJW0EW59ALLcVutzJpZB4YTIMAboVMxfxjmRSrrUzTDzmrIcq8IoFxICVTOaChyJDhwCT5MhJcrJFxuIb+/vlr8bQk6qbZ/DG+mV/mj+aYMFRivr5giT/b56SGRQWQ2hs+ZFmY964OujYgLrfkLUjbSRVWb+36ZXp2ifNNeVpcqgFYY6ID/ovKnoJBwsFaB7ejUwY6CS2AYdPK9RoIqQwwYxxom4EbHSqKNo7N5DVomCkWfajqbTRChsJqI+kCR9BGQsGEajLHoCA7ADNWh2D7TljN51i3uVLKY3X5eLpM1LpcYM4W1oNVTB7IFJUOG6GG57OzwuGSnQRldMrgfTRbI6FXYEnA10Iph8EoGbr1aKcOdJUncjkdmoCYVYLvsjmDrzUXbk1l6uYhZpRrm/tO8nDfcOK/XDB4zGvF3sdjBJEGEdp4Q070sUJh1w6Y+KmxR0D64FG3j0rbm2ZbnUIiow7C6dWmX6HZoHr5tH3Cj2O/IRUwk4Qx+y1qhbvZ/nNp7Vo++f36Ysxsm9kXqh/ciNqJtWKMaf1yKjrHjOOrf28NL01NHnbQwTcePx3mQcRFDGiDS5oUkECQJvL46JentqdzQBLEBTmOICcOaOdCoHwlh5+pHC6uvjUr9EgU5iDjTVq4bET8LCwjCy3KHzKn7V6zlD8tj5c7CxT7mX6SVRNCzaPQG65aK61U+3Jp6+nksnDfDQ2Tb9i475SAGhDjR/nd7T6jiblqcHhMPZhBsJqT9DELqGRtM9eM8yFxixfAlDmhv25mhmSb/MrftwHdyzt01f94IbU5pNCue6jeBPhr7NZMlyPVdS4o/2y8/Phcwkecq3VhMNLHB/0g/+99I29UqvdzNw6Nt64CkTcS3JOukNJnSCX1GrcqgTzTqA9PO48+oMu+IwCqasBsgztJU7uEoR/uZMA3xIlESJ4bCvaDoAqNrp5f9uPY/UEsHCOjpz7kuBAAApQ4AAFBLAQIUABQACAgIAJiQQ0ro6c+5LgQAAKUOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAGMEAAAAAA==}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=6684, browserVersion=51.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, firefox_profile=UEsDBBQACAgIAJiQQ0oAAAAAAAAAA...}] Session ID: 82c1927e-b8f6-4104-91d6-523aee2ba165 *** Element info: {Using=tag name, value=h2}</td>  
+            <td>2017/02/03 18:05:006</td>  
+            <td>FAIL</td>  
+            <td/> 
+          </tr>  
+          <tr name="FAIL" id="6366e8ff-dbcd-4512-bd7e-cec94669454d"> 
+            <td>10</td>  
+            <td>Exception occured at 'close_Browser' method</td>  
+            <td/>  
+            <td>Tried to run command without establishing a connection Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700' System info: host: 'ZAUSVDISUBISWAS', ip: '10.201.167.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAJiQQ0oAAAAAAAAAAAAAAAAHAAAAdXNlci5qc61XwW7bOBC971cUPrVAwk2a7aU9eZMUWCDYLOINejFAUNTIYkyRXA5pxX+/Q8mqHUuW3KInUxKHw5l57804InjuPBTvZ5m3NT0xFAU0a2VWrBK6Fh4YGJFpyGcX7wqhET58+S3uLXMRaI+zPiSTEoQOZfvMaNNGyQn7znMJ2oGfO4csud3iHNessF7C2XYGNrQiMxQb+NfeKVyT7SzAa/hdmG36fXfRPDktlGmXZaj0hXBOKymCsqb9NnvrzECorV+zMgTHXKmw3F6mz04gXmowq1CSp4+fPg3f0YPI6SeHADJA/lV5DHNKmNQpuODjcU5tRcl/5bL0tgKO0isXuI+GB1Ulk5urYUdBZMioZubR3GqLE6nLbW20FTn5MmKVql/a+lsJZkElTeUcNnd0KRcwOeOVzYWeAAhsgrUaGXhP5bQGrT7ERD98VCtjDWWtgioDv2gecTwWBESqHgZLgPWAkfJW0EW59ALLcVutzJpZB4YTIMAboVMxfxjmRSrrUzTDzmrIcq8IoFxICVTOaChyJDhwCT5MhJcrJFxuIb+/vlr8bQk6qbZ/DG+mV/mj+aYMFRivr5giT/b56SGRQWQ2hs+ZFmY964OujYgLrfkLUjbSRVWb+36ZXp2ifNNeVpcqgFYY6ID/ovKnoJBwsFaB7ejUwY6CS2AYdPK9RoIqQwwYxxom4EbHSqKNo7N5DVomCkWfajqbTRChsJqI+kCR9BGQsGEajLHoCA7ADNWh2D7TljN51i3uVLKY3X5eLpM1LpcYM4W1oNVTB7IFJUOG6GG57OzwuGSnQRldMrgfTRbI6FXYEnA10Iph8EoGbr1aKcOdJUncjkdmoCYVYLvsjmDrzUXbk1l6uYhZpRrm/tO8nDfcOK/XDB4zGvF3sdjBJEGEdp4Q070sUJh1w6Y+KmxR0D64FG3j0rbm2ZbnUIiow7C6dWmX6HZoHr5tH3Cj2O/IRUwk4Qx+y1qhbvZ/nNp7Vo++f36Ysxsm9kXqh/ciNqJtWKMaf1yKjrHjOOrf28NL01NHnbQwTcePx3mQcRFDGiDS5oUkECQJvL46JentqdzQBLEBTmOICcOaOdCoHwlh5+pHC6uvjUr9EgU5iDjTVq4bET8LCwjCy3KHzKn7V6zlD8tj5c7CxT7mX6SVRNCzaPQG65aK61U+3Jp6+nksnDfDQ2Tb9i475SAGhDjR/nd7T6jiblqcHhMPZhBsJqT9DELqGRtM9eM8yFxixfAlDmhv25mhmSb/MrftwHdyzt01f94IbU5pNCue6jeBPhr7NZMlyPVdS4o/2y8/Phcwkecq3VhMNLHB/0g/+99I29UqvdzNw6Nt64CkTcS3JOukNJnSCX1GrcqgTzTqA9PO48+oMu+IwCqasBsgztJU7uEoR/uZMA3xIlESJ4bCvaDoAqNrp5f9uPY/UEsHCOjpz7kuBAAApQ4AAFBLAQIUABQACAgIAJiQQ0ro6c+5LgQAAKUOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAGMEAAAAAA==}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=6684, browserVersion=51.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, firefox_profile=UEsDBBQACAgIAJiQQ0oAAAAAAAAAA...}] Session ID: 82c1927e-b8f6-4104-91d6-523aee2ba165</td>  
+            <td>2017/02/03 18:05:007</td>  
+            <td>FAIL</td>  
+            <td></td>
+          </tr> 
+        </tbody> 
+      </table> 
+    </div> 
+  </body> 
+</html>
