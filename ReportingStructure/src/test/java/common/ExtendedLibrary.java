@@ -303,7 +303,7 @@ public class ExtendedLibrary extends Browser {
     }
     public void waitForLoadingRecords() {
         try {
-            waitForInvisibilityOfElementTill1MinLocatedBy(By.xpath("//*[contains(text(),'Loading records...')]"));
+            waitForInvisibilityOfElementTill1MinLocatedBy(By.xpath("//*[contains(text(),'Loading')]"));
 
         } catch (Exception e) {
             ResultUtil.report("FAIL", "EXCEPTION at 'waitForLoadingRecords' CA Dashboard", "", "", driver);
