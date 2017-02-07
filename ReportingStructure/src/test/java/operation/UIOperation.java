@@ -45,6 +45,7 @@ public class UIOperation extends ExtendedLibrary {
 	static WebDriverWait wait;
 	static String project_path = System.getProperty("user.dir");
 	static int MAX_TIMEOUT = 60;
+	static int STABLE_WAIT = 1000;
 	
 	public void open_Browser(String browserName) throws MalformedURLException{
 		try{
@@ -182,13 +183,14 @@ public class UIOperation extends ExtendedLibrary {
 		}
 	}
 	
-	public void click_On_Button(String locatorType, String value) {
+	public void click_On_Button(String locatorType, String value) throws InterruptedException {
 		try {
 			By locator;
 			locator = locatorValue(locatorType, value);
 			WebElement element = driver.findElement(locator);
 			((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+element.getLocation().x+")");
 			element.click();
+			Thread.sleep(STABLE_WAIT);
 			ResultUtil.report("PASS", "Verify clicking button - "+ value, "Button should be clicked", "Button is clicked", driver);
 		} catch (NoSuchElementException e) {
 			System.err.format("No Element Found to perform click" + e);
@@ -201,6 +203,17 @@ public class UIOperation extends ExtendedLibrary {
 			By locator;
 			locator = locatorValue(locatorType, value);
 			WebElement element = new WebDriverWait(driver, MAX_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(locator));
+		} catch (NoSuchElementException e) {
+			System.err.format("No Element Found." + e);
+		}
+	}
+	
+	public void wait_for_loading(String locatorType, String value) throws InterruptedException{
+		try {
+			By locator;
+			locator = locatorValue(locatorType, value);
+			new WebDriverWait(driver, MAX_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(locator));
+			Thread.sleep(STABLE_WAIT);
 		} catch (NoSuchElementException e) {
 			System.err.format("No Element Found." + e);
 		}
@@ -356,6 +369,10 @@ public class UIOperation extends ExtendedLibrary {
 			
 		case "WAIT_FOR_ELEMENT":
 			wait_for_element(objectType, p.getProperty(objectName));
+			break;
+			
+		case "WAIT_FOR_LOADING":
+			wait_for_loading(objectType, p.getProperty(objectName));
 			break;
 			
 		case "WAIT_FOR_PAGE_TO_LOAD":

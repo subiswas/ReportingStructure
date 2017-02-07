@@ -4,7 +4,7 @@
   <test name="BPA Report Demo 1">
     <classes>
     	<class name="intialize.Prerequsite"/>
-      <class name="com.poc.ReportingStructure.BPA_Smoke_Login_TC001"/>
+      <class name="com.poc.ReportingStructure.BPA_Update_Functionality"/>
       <!-- <class name="com.poc.ReportingStructure.SecondReportDemo"/>
       <class name="com.poc.ReportingStructure.ThirdReportDemo"/> -->
     </classes>
