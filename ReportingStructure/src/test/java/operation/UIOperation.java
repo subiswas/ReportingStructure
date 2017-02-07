@@ -306,6 +306,29 @@ public class UIOperation extends ExtendedLibrary {
 		}
 	}
 	
+	public void verify_table_content(String locatorType, String value, String text){
+		try{
+			By locator;
+			int flag = 0;
+			locator = locatorValue(locatorType, value);
+			List<WebElement> allItem = driver.findElements(locator);
+			for(WebElement item:allItem){
+				String content = item.getText().toString();
+				if(content.contentEquals(text)){
+					flag = 1;
+					break;
+				}
+			}
+			if(flag == 1){
+				ResultUtil.report("PASS", "Verify table content - "+text,"'"+text+"' should be present", "'"+text+"' is present", driver);
+			} else {
+				ResultUtil.report("FAIL", "Verify table content - "+text,"'"+text+"' should be present", "'"+text+"' is not present", driver);
+			}
+		} catch(Exception e){
+			ResultUtil.report("FAIL", "Exception occured at 'verify_table_content'","", e.getMessage(), driver);
+		}
+	}
+	
 	public void partial_text_verification(String locatorType, String value, String text){
 		String actual = get_Text(locatorType, value);
 		String expected = text;
@@ -418,6 +441,8 @@ public class UIOperation extends ExtendedLibrary {
 			select_checkbox_table_content_by_rownum(objectType, p.getProperty(objectName), value);
 			break;
 			
+		case "VERIFY_TABLE_CONTENT":
+			verify_table_content(objectType, p.getProperty(objectName), value);
 		default:
 			break;
 		}
