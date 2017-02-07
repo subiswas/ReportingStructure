@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
@@ -289,6 +290,22 @@ public class UIOperation extends ExtendedLibrary {
 		}
 	}
 	
+	public void select_checkbox_table_content_by_rownum(String locatorType, String value, String text){
+		try{
+			By locator;
+			locator = locatorValue(locatorType, value);
+			List<WebElement> allCheckboxes = driver.findElements(locator);
+			if(allCheckboxes.size() > 0){
+				allCheckboxes.get(Integer.parseInt(text)).click();
+				ResultUtil.report("PASS", "Clicking checkbox at row "+text,"Check box should be clicked", "Check box is clicked", driver);
+			} else {
+				ResultUtil.report("FAIL", "Clicking checkbox at row "+text,"Check box should be clicked", "No checkbox found", driver);
+			}
+		} catch(Exception e){
+			ResultUtil.report("FAIL", "Exception occured at 'select_checkbox_table_content_by_rownum'","", e.getMessage(), driver);
+		}
+	}
+	
 	public void partial_text_verification(String locatorType, String value, String text){
 		String actual = get_Text(locatorType, value);
 		String expected = text;
@@ -395,6 +412,10 @@ public class UIOperation extends ExtendedLibrary {
 			
 		case "SPLCLICKLINK":
 			spl_click_on_link(objectType, p.getProperty(objectName));
+			break;
+			
+		case "SELECT_CHECKBOX_TABLE_CONTENT_BY_ROW":
+			select_checkbox_table_content_by_rownum(objectType, p.getProperty(objectName), value);
 			break;
 			
 		default:
