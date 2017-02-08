@@ -306,6 +306,34 @@ public class UIOperation extends ExtendedLibrary {
 		}
 	}
 	
+	public void select_checkbox_table_content_by_text(String locatorType, String value, String text){
+		try{
+			By locator;
+			int row = 0;
+			locator = locatorValue(locatorType, value);
+			List<WebElement> allItem = driver.findElements(locator);
+			for(WebElement item:allItem){
+				String content = item.getText().toString();
+				if(content.contentEquals(text)){
+					break;
+				}
+				row++;
+			}
+			String[] locator_parts = value.split(":");
+			value = locator_parts[0] + " input";
+			locator = locatorValue(locatorType, value);
+			List<WebElement> allCheckboxes = driver.findElements(locator);
+			if(allCheckboxes.size() > 0){
+				allCheckboxes.get(row - 1).click();
+				ResultUtil.report("PASS", "Clicking checkbox at content "+text,"Check box should be clicked", "Check box is clicked", driver);
+			} else {
+				ResultUtil.report("FAIL", "Clicking checkbox at content "+text,"Check box should be clicked", "No checkbox found", driver);
+			}
+		} catch(Exception e){
+			ResultUtil.report("FAIL", "Exception occured at 'select_checkbox_table_content_by_text'","", e.getMessage(), driver);
+		}
+	}
+	
 	public void verify_table_content(String locatorType, String value, String text){
 		try{
 			By locator;
@@ -415,10 +443,6 @@ public class UIOperation extends ExtendedLibrary {
 			wait_for_loading(objectType, p.getProperty(objectName));
 			break;
 			
-		case "WAIT_FOR_PAGE_TO_LOAD":
-			waitForPageToLoad();
-			break;
-			
 		case "VERIFY_ELEMENT_DISPLAYED":
 			verify_element_displayed(objectType, p.getProperty(objectName));
 			break;
@@ -441,6 +465,9 @@ public class UIOperation extends ExtendedLibrary {
 			select_checkbox_table_content_by_rownum(objectType, p.getProperty(objectName), value);
 			break;
 			
+		case "SELECT_CHECKBOX_TABLE_CONTENT_BY_TEXT":
+			select_checkbox_table_content_by_text(objectType, p.getProperty(objectName), value);
+			break;
 		case "VERIFY_TABLE_CONTENT":
 			verify_table_content(objectType, p.getProperty(objectName), value);
 		default:
