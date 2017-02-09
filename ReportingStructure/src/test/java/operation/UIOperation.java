@@ -156,15 +156,18 @@ public class UIOperation extends ExtendedLibrary {
 		
 	}
 	
-	public void click_On_Link(String locatorType, String value) {
+	public void click_On_Link(String locatorType, String value) throws InterruptedException {
 		try {
 			By locator;
 			locator = locatorValue(locatorType, value);
 			WebElement element = driver.findElement(locator);
 			((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+element.getLocation().x+")");
 			element.click();
+			Thread.sleep(STABLE_WAIT);
+			ResultUtil.report("PASS", "Verify clicking button - "+ value, "Button should be clicked", "Button is clicked", driver);
 		} catch (NoSuchElementException e) {
-			System.err.format("No Element Found to enter text" + e);
+			System.err.format("No Element Found to perform click" + e);
+			ResultUtil.report("FAIL", "Exception occured at 'click_On_Button'", "", "", driver);
 		}
 	}
 	
@@ -204,8 +207,10 @@ public class UIOperation extends ExtendedLibrary {
 			By locator;
 			locator = locatorValue(locatorType, value);
 			WebElement element = new WebDriverWait(driver, MAX_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(locator));
+			ResultUtil.report("INFO", "Waiting for element displayed", "", "", driver);
 		} catch (NoSuchElementException e) {
 			System.err.format("No Element Found." + e);
+			ResultUtil.report("FAIL", "Exception occured at 'wait_for_element'", "", "", driver);
 		}
 	}
 	
@@ -215,8 +220,10 @@ public class UIOperation extends ExtendedLibrary {
 			locator = locatorValue(locatorType, value);
 			new WebDriverWait(driver, MAX_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(locator));
 			Thread.sleep(STABLE_WAIT);
+			ResultUtil.report("INFO", "Waiting for loading", "", "", driver);
 		} catch (NoSuchElementException e) {
 			System.err.format("No Element Found." + e);
+			ResultUtil.report("FAIL", "Exception occured at 'wait_for_loading'", "", "", driver);
 		}
 	}
 	
@@ -363,6 +370,17 @@ public class UIOperation extends ExtendedLibrary {
 		Assert.assertTrue(actual.contains(expected));
 	}
 	
+	public void change_css_attribute(String locatorType, String value, String text){
+		try{
+			String[] text_arr = text.split(",");
+			if(locatorType.contentEquals("class")){
+				((JavascriptExecutor) driver).executeScript("document.getElementsByClassName('"+value+"')[0].style."+text_arr[0]+"='"+text_arr[1]+"'");
+			}
+		} catch (Exception e){
+			ResultUtil.report("FAIL", "Exception occured at 'change_css_attribute'","", e.getMessage(), driver);
+		}
+	}
+	
 	public void setClipboardData(String file_location){
 		StringSelection stringSelection = new StringSelection(file_location);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
@@ -411,7 +429,7 @@ public class UIOperation extends ExtendedLibrary {
 			click_On_Button(objectType, p.getProperty(objectName));
 			break;
 			
-		case "CLICKLINK":
+		case "CLICK_LINK":
 			click_On_Link(objectType, p.getProperty(objectName));
 			break;
 			
@@ -468,8 +486,14 @@ public class UIOperation extends ExtendedLibrary {
 		case "SELECT_CHECKBOX_TABLE_CONTENT_BY_TEXT":
 			select_checkbox_table_content_by_text(objectType, p.getProperty(objectName), value);
 			break;
+			
+		case "CHANGE_CSS_ATTRIBUTE":
+			change_css_attribute(objectType, p.getProperty(objectName), value);
+			break;
+			
 		case "VERIFY_TABLE_CONTENT":
 			verify_table_content(objectType, p.getProperty(objectName), value);
+			break;
 		default:
 			break;
 		}
